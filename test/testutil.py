@@ -221,7 +221,7 @@ def pull_container(container_ref, target_arch="", tls_verify=True):
     if target_arch == "":
         target_arch = platform.machine()
 
-    if target_arch not in ["x86_64", "amd64", "aarch64", "arm64", "s390x", "ppc64le"]:
+    if target_arch not in ["x86_64", "amd64", "aarch64", "arm64", "s390x", "ppc64le", "riscv64"]:
         raise RuntimeError(f"unknown host arch: {target_arch}")
 
     subprocess.run([

@@ -138,5 +138,6 @@ def gen_testcases(what):  # pylint: disable=too-many-return-statements
             TestCaseC9S(target_arch="arm64"),
             TestCaseFedora(target_arch="ppc64le"),
             TestCaseFedora(target_arch="s390x"),
+            TestCaseFedora(target_arch="riscv64"),
         ]
     raise ValueError(f"unknown test-case type {what}")
